@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          #skipSslValidation: true
+          uri: https://github.com/Wipeher/SpringCloudConfigServer.git
+          username: Wipeher
+          password: wosiklc19930212
+          basedir: E:\Code\JAVA\SoftWare\Intellij IDEA\Immoc\SpringCloud_Liao\config\basedir
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+debug: true
+env:
+  test
