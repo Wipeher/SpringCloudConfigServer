@@ -1,0 +1,13 @@
+zuul:
+  routes:
+      aaaa:
+        path:
+        serviceId: product
+        sensitiveHeaders:
+    #简便写法
+    #product: /myProduct/**
+    #排除某些路由
+  ignored-patterns:
+    - /product/com/klc/product/server/list
+    - /myProduct/com/klc/product/server/list
+    - /**/com/klc/product/server/list
